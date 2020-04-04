@@ -40,8 +40,8 @@ public class TripleDES {
 		// in the $JAVA_HOME/jre/lib/security/java.security file.
 		// Therefore, we have to install the JCE provider explicitly.
 		System.err.println("Installing SunJCE provider.");
-		Provider sunjce = new com.sun.crypto.provider.SunJCE();
-		Security.addProvider(sunjce);
+//		Provider sunjce = new com.sun.crypto.provider.SunJCE();
+//		Security.addProvider(sunjce);
 	    }
 
 	    // This is where we'll read the key from or write it to

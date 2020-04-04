@@ -19,7 +19,16 @@ repositories {
 
 dependencies {
     // This dependency is exported to consumers, that is to say found on their compile classpath.
-    api 'org.apache.commons:commons-math3:3.6.1'
+    compile 'org.apache.commons:commons-math3:3.6.1'
+    compile 'javax.servlet:javax.servlet-api:3.0.1' +
+            ''
+    // https://mvnrepository.com/artifact/org.bouncycastle/
+    compile group: 'org.bouncycastle', name: 'bcpkix-jdk15on', version: '1.64'
+    compile group: 'org.bouncycastle', name: 'bcmail-jdk15on', version: '1.64'
+    compile group: 'org.bouncycastle', name: 'bcpg-jdk15on', version: '1.64'
+    compile group: 'org.bouncycastle', name: 'bctls-jdk15on', version: '1.64'
+    compile group: 'org.bouncycastle', name: 'bcprov-jdk15on', version: '1.64'
+    compile group: 'org.bouncycastle', name: 'bcprov-ext-jdk15on', version: '1.64'
 
     // This dependency is used internally, and not exposed to consumers on their own compile classpath.
     implementation 'com.google.guava:guava:28.1-jre'
